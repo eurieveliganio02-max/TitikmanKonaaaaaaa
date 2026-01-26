@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background: url(jn.jpg);
+    background-repeat:no-repeat;
+}
+
+.image_container{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#parking{
+    width: 30%;
+    height: 50vh;
+}

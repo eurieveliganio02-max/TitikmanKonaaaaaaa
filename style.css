@@ -1,0 +1,611 @@
+
+
+/*a{
+  text-decoration: none;
+  color: white;
+}
+
+.material-symbols-outlined{
+  height: .8em;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+ 
+body {
+  min-height: 100vh;
+  background: url(jn.jpg) no-repeat center / cover;
+  color: white;
+}
+
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.image img {
+  width: 40px;
+  height: 40px;
+}
+
+.image h2 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+ 
+.stu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+#dent {
+  width: 100%;
+  max-width: 350px;
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+}
+
+#st {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 235);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+
+input {
+  width: 100%;
+  max-width: 250px;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+
+nav {
+  background: #333;
+  padding: 0.5rem;
+}
+
+.navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav button {
+  background: #555;
+  color: white;
+  border: none;
+}
+
+nav button:hover {
+  background: #777;
+}
+
+
+#map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.ser h3 {
+  margin-top: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.searchb {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.searchb input {
+  width: 90%;
+  max-width: 400px;
+  height: 2.8rem;
+  padding: 0.5rem;
+}
+
+ 
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.room-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+  .image h2 {
+    font-size: 1rem;
+  }
+
+  nav button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+*/
+
+/*a{
+  text-decoration: none;
+  color: white;
+}
+
+.material-symbols-outlined{
+  height: .8em;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(jn.jpg) no-repeat center / cover;
+  color: white;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.image img {
+  width: 40px;
+  height: 40px;
+}
+
+.image h2 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.stu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+#dent {
+  width: 100%;
+  max-width: 350px;
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+}
+
+#st {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 235);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+input {
+  width: 100%;
+  max-width: 250px;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+nav {
+  background: #333;
+  padding: 0.5rem;
+}
+
+.navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav button {
+  background: #555;
+  color: white;
+  border: none;
+}
+
+nav button:hover {
+  background: #777;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ser h3 {
+  margin-top: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.searchb {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.searchb input {
+  width: 90%;
+  max-width: 400px;
+  height: 2.8rem;
+  padding: 0.5rem;
+}
+
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.room-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .image h2 {
+    font-size: 1rem;
+  }
+
+  nav button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* ===================================================== */
+/* ✅ FIXED MAP SYSTEM: ORIGINAL SIZE + SCROLLABLE MOBILE */
+/* ===================================================== 
+
+.map-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.responsive-map {
+  width: 1382px;      exact original width 
+  height: 1019px;     exact original height 
+  display: block;
+
+  max-width: none;    prevents shrinking
+}
+.active { display: block; }
+  .inactive { display: none; }*/
+
+
+  /* =====================
+   GLOBAL RESET & THEME
+===================== */
+
+:root {
+  --glass-bg: rgba(0, 0, 0, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --accent: #4da3ff;
+  --accent-hover: #79b8ff;
+  --text-main: #ffffff;
+  --text-muted: #cfd8e3;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(jn.jpg) no-repeat center / cover;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+/* =====================
+   LINKS & ICONS
+===================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.material-symbols-outlined {
+  height: 0.9em;
+  vertical-align: middle;
+}
+
+/* =====================
+   HEADER / BRANDING
+===================== */
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.image img {
+  width: 42px;
+  height: 42px;
+}
+
+.image h2 {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+
+nav {
+  margin-top: 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+nav button {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+nav button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* =====================
+   MAIN CARD (CENTER)
+===================== */
+
+.stu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+
+#dent {
+  width: 100%;
+  max-width: 360px;
+  padding: 2rem 1.6rem;
+  border-radius: var(--radius-lg);
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+#st {
+  font-size: 1.9rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+
+/* =====================
+   INPUTS & BUTTONS
+===================== */
+
+input {
+  width: 100%;
+  max-width: 260px;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+button {
+  font-size: 0.95rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* =====================
+   SEARCH SECTION
+===================== */
+
+.ser h3 {
+  margin-top: 2rem;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  font-weight: 600;
+  text-align: center;
+}
+
+.searchb {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.searchb input {
+  width: 90%;
+  max-width: 420px;
+  height: 2.9rem;
+}
+
+/* =====================
+   MAP SYSTEM (UNCHANGED)
+===================== */
+
+.map-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.responsive-map {
+  width: 1382px;
+  height: 1019px;
+  display: block;
+  max-width: none;
+}
+
+/* =====================
+   ROOM GRID
+===================== */
+
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  padding: 2.5rem 1.2rem;
+  text-align: center;
+}
+
+.room-container img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.room-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* =====================
+   UTILITY
+===================== */
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+/* =====================
+   MOBILE TWEAKS
+===================== */
+
+@media (max-width: 600px) {
+  nav {
+    margin-inline: 0.8rem;
+  }
+
+  nav button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  #st {
+    font-size: 1.6rem;
+  }
+}
+

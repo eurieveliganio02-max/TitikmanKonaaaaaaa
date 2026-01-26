@@ -1,0 +1,993 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palit page template ito</title>
+    <link rel="icon" type="image/jpg" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="page"></div>
+    <template id="student">
+        <header><div class="image"><img src="R.png"><h2>ARELLANO UNIVERSITY JOSE RIZAL CAMPUS</h2><img src="C.png"></div></header>
+        <div class="stu">
+            <form id="dent">
+            <h2 id="st">A.U.M.S</h2>
+            <label for="btn1">For Student:</label>
+            <button id="btn1" onclick="loadPage('home')">Start</button><br><br>
+            <label for="btn2">For Admin Only:</label>
+            <button id="btn2" onclick="loadPage('admin')">ADMIN KEY</p></button>
+
+        </form>
+        </div>
+    </template>
+
+
+
+    <template id="admin">
+         <header><div class="image"><img src="R.png"><h2>ARELLANO UNIVERSITY JOSE RIZAL CAMPUS</h2><img src="C.png"></div></header>
+        <div class="stu">
+            <form id="dent">
+            <h2 id="st">Admin</h2>
+            <label for="password">ADMIN KEY:</label><br><br>
+            <input type="password" form="password" placeholder="  Type Password" required><br><br>
+            <input type="submit" form="button" value="Modify" onclick="loadPage('admin_settings')" required >
+        </form>
+        </div>
+    </template>
+
+    <template id="home">
+        <nav>
+            <div class="navi">
+            <button>Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+            <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+<div class="map-wrapper">
+  <img
+    src="f1.jpg"
+    class="responsive-map"
+    usemap="#image-map"
+    data-original-width="1400"
+    data-original-height="1000"
+  >
+</div>
+
+
+<map name="image-map">
+    <area target="_blank" alt="NF 101 Chemistry Laboratory" title="NF 101 Chemistry Laboratory" href="NF 101 Chemistry Laboratory_.jpg" coords="119,55,237,66,230,170,110,159" shape="poly">
+     <area target="_blank" alt="STO" title="STO" href="STO(1).jpg" coords="104,167,225,175,225,216,97,208" shape="poly">
+    <area target="_blank" alt="Comport Room" title="Comport Room" href="CR_.jpg" coords="249,67,298,71,298,111,243,107" shape="poly">
+    <area target="_blank" alt="Hot kitchen" title="Hot kitchen" href="HOT KITCHEN_.jpg" coords="316,73,399,82,390,187,305,180" shape="poly">
+    <area target="_blank" alt="Asian Kitchen " title="Asian Kitchen " href="Asian and Cold Kitchen.jpg" coords="413,82,433,83,426,192,403,187" shape="poly">
+    <area target="_blank" alt="Cold kitchen" title="Cold kitchen" href="Asian and Cold Kitchen.jpg" coords="446,85,469,85,462,193,436,191" shape="poly">
+    <area target="_blank" alt="Function Room" title="Function Room" href="FUNCTION ROOM.jpg" coords="485,88,564,94,558,199,476,193" shape="poly">
+    <area target="_blank" alt="Guest Room" title="Guest Room" href="NF 105 GUEST ROOM_.jpg" coords="576,95,607,98,598,205,565,201" shape="poly">
+    <area target="_blank" alt="STO" title="STO" href="STO.jpg" coords="616,97,658,100,646,206,607,206" shape="poly">
+    <area target="_blank" alt="Mock travel Offce" title="Mock travel Offce" href="MOCK TRAVEL OFFICE.jpg" coords="738,108,785,110,780,196,731,190" shape="poly">
+    <area target="_blank" alt="Record Section" title="Record Section" href="RECORDS SECTION_.jpg" coords="793,112,906,123,899,207,786,196" shape="poly">
+    <area target="_blank" alt="Office Of Elementary Principal" title="Office Of Elementary Principal" href="OFFICE OF THE ELEMENTARY PRINCIPAL_.jpg" coords="914,127,957,128,954,213,908,207" shape="poly">
+    <area target="_blank" alt="NF 109 Chemistry" title="NF 109 Chemistry" href="NF 101 Chemistry Laboratory_.jpg" coords="1085,32,1152,30,1153,112,1085,114" shape="poly">
+    <area target="_blank" alt="NF 110 Biology " title="NF 110 Biology " href="NF 110 BIOLOGY_.jpg" coords="1163,35,1236,30,1241,117,1164,114" shape="poly">
+    <area target="_blank" alt="NF 111 Physical Laboratory" title="NF 111 Physical Laboratory" href="NF 111 PHYSICS LABORATORY_.jpg" coords="1247,32,1316,33,1321,116,1246,116" shape="poly">
+    <area target="_blank" alt="Consulttion Room" title="Consulttion Room" href="" coords="1187,265,1248,265,1248,315,1187,317" shape="poly">
+    <area target="_blank" alt="MB 102" title="MB 102" href="MB 102.jpg" coords="1182,329,1189,473,1253,475,1251,327" shape="poly">
+    <area target="_blank" alt="MB 101" title="MB 101" href="MB 101.jpg" coords="1186,480,1247,481,1250,638,1184,637" shape="poly">
+    <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(1).jpg" coords="1186,650,1245,649,1250,757,1187,759" shape="poly">
+    <area target="_blank" alt="TLE Room" title="TLE Room" href="TLE ROOM.jpg" coords="903,409,1048,408,1047,474,903,474" shape="poly">
+    <area target="_blank" alt="NB 102" title="NB 102" href="NB 101 & NB 202.jpg" coords="903,496,991,496,992,641,901,646" shape="poly">
+    <area target="_blank" alt="NB 101" title="NB 101" href="NB 101 & NB 202.jpg" coords="903,654,988,652,992,816,903,819" shape="poly">
+    <area target="_blank" alt="Store" title="Store" href="" coords="806,293,870,289,871,324,804,327" shape="poly">
+    <area target="_blank" alt="BA 101 Midwifery" title="BA 101 Midwifery" href="MIDWIFERY BA 101.jpg" coords="799,408,876,406,877,528,799,528" shape="poly">
+    <area target="_blank" alt="BA 102 Audio Visual Room" title="BA 102 Audio Visual Room" href="AUDIO VISUAL ROOM BA 102.jpg" coords="798,536,876,532,873,679,799,677" shape="poly">
+    <area target="_blank" alt="BA 103 Junior High Faculty" title="BA 103 Junior High Faculty" href="JUNIOR HIGH FACULTY_.jpg" coords="799,683,876,683,877,821,799,817" shape="poly">
+    <area target="_blank" alt="SHS 110" title="SHS 110" href="SHS 110.jpg" coords="1162,886,1247,880,1248,987,1156,983" shape="poly">
+    <area target="_blank" alt="SHS 109" title="SHS 109" href="SHS 109.jpg" coords="1048,885,1146,883,1147,985,1048,983" shape="poly">
+    <area target="_blank" alt="SHS 108" title="SHS 108" href="" coords="938,885,1040,879,1041,982,942,984" shape="poly">
+    <area target="_blank" alt="SHS 107" title="SHS 107" href="" coords="846,882,930,881,931,981,852,984" shape="poly">
+    <area target="_blank" alt="SHS 106" title="SHS 106" href="SHS 106.jpg" coords="756,880,840,880,840,985,756,983" shape="poly">
+    <area target="_blank" alt="SHS 105" title="SHS 105" href="SHS 105.jpg" coords="659,882,747,882,747,984,658,982" shape="poly">
+    <area target="_blank" alt="Office Of The Vice Principal" title="Office Of The Vice Principal" href="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg" coords="573,883,646,882,646,982,574,983" shape="poly">
+    <area target="_blank" alt="Clinic" title="Clinic" href="CLINIC SHS 101.jpg" coords="482,882,562,878,560,982,485,986" shape="poly">
+    <area target="_blank" alt="Senior High School Faculty" title="Senior High School Faculty" href="SENIOR HIGH FACULTY_.jpg" coords="401,878,468,878,473,986,401,986" shape="poly">
+    <area target="_blank" alt="Office Of The High School Principal" title="Office Of The High School Principal" href="OFFICE OF THE HIGH SCHOOL PRINCIPAL_.jpg" coords="316,881,388,881,390,986,315,984" shape="poly">
+    <area target="_blank" alt="Guard House" title="Guard House" href="" coords="193,880,243,876,248,984,190,984" shape="poly">
+    <area target="_blank" alt="Main Gate" title="Main Gate" href="MAIN GATE.jpg" coords="120,879,177,877,180,990,121,996" shape="poly">
+    <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(1).jpg" coords="35,834,104,834,109,986,36,984" shape="poly">
+    <area target="_blank" alt="NCB 101" title="NCB 101" href="" coords="37,617,97,616,100,762,36,762" shape="poly">
+    <area target="_blank" alt="Bursar " title="Bursar " href="BURSAR.jpg" coords="225,297,324,297,324,389,229,387" shape="poly">
+    <area target="_blank" alt="Guidance Office" title="Guidance Office" href="GUIDANCE OFFICE.jpg" coords="332,299,426,296,430,386,330,388" shape="poly">
+    <area target="_blank" alt="DigiCom" title="DigiCom" href="DigiCom.jpg" coords="433,300,474,296,479,388,436,390" shape="poly">
+    <area target="_blank" alt="OSA" title="OSA" href="OFFICE FOR STUDENT AFFAIRS_.jpg" coords="487,302,531,298,529,388,487,389" shape="poly">
+    <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(2).jpg" coords="537,303,603,298,607,386,537,388" shape="poly">
+    <area target="_blank" alt="STO" title="STO" href="STO(1).jpg" coords="637,300,677,300,677,386,635,385" shape="poly">
+    <area target="_blank" alt="Power RM" title="Power RM" href="" coords="637,650,676,650,677,731,637,731" shape="poly">
+    <area target="_blank" alt="NF 108 Science Laboratory Stock Room" title="NF 108 Science Laboratory Stock Room" href="NF 108 SCIENCE LABORATORY STOCK ROOM.jpg" coords="1010,32,1076,33,1074,113,1010,112" shape="poly">
+    <area target="_blank" alt="Stage" title="Stage" href="CB GROUNDS_STAGE.jpg" coords="462,438,608,470,607,645,486,658,407,638,333,525" shape="poly">
+</map>
+</div>
+    </template>
+
+    <template id="secondfloor">
+         <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button>Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+        
+<div class="map-wrapper">
+  <img
+    src="f3.jpg"
+    class="responsive-map"
+    usemap="#image-map"
+    data-original-width="1400"
+    data-original-height="1000"
+  >
+</div>
+
+
+<map name="image-map">
+    <area target="_blank" alt="NF 201 Computer Lab" title="NF 201 Computer Lab" href="NF 201 COMPUTER LABORATORY 1.jpg" coords="110,36,230,41,218,203,98,189" shape="poly">
+    <area target="_blank" alt="NF 202 Computer Lab" title="NF 202 Computer Lab" href="NF 202 COMPUTER LABORATORY 2.jpg" coords="305,53,381,56,371,170,298,166" shape="poly">
+    <area target="_blank" alt="College Library" title="College Library" href="NF 206 COLLEGE LIBRARY_.jpg" coords="751,93,969,112,964,194,743,173" shape="poly">
+    <area target="_blank" alt="NF 208 Dean's office" title="NF 208 Dean's office" href="DEAN_S OFFICE.jpg" coords="998,7,1001,96,1076,100,1074,11" shape="poly">
+    <area target="_blank" alt="NF 209" title="NF 209" href="NF 209.jpg" coords="1085,10,1162,7,1164,92,1086,98" shape="poly">
+    <area target="_blank" alt="NF 210" title="NF 210" href="NF 210.jpg" coords="1174,14,1257,8,1259,97,1175,94" shape="poly">
+    <area target="_blank" alt="NF 211" title="NF 211" href="NF 211.jpg" coords="1273,11,1344,10,1344,94,1270,97" shape="poly">
+    <area target="_blank" alt="Accredation RM" title="Accredation RM" href="ACCREDITATION & SERVER ROOM.jpg" coords="1202,231,1281,230,1281,269,1207,269" shape="poly">
+    <area target="_blank" alt="Server Room " title="Server Room " href="ACCREDITATION & SERVER ROOM.jpg" coords="1207,276,1280,274,1284,307,1208,306" shape="poly">
+    <area target="_blank" alt="MB 203" title="MB 203" href="MB 203.jpg" coords="1213,318,1278,314,1279,461,1213,466" shape="poly">
+    <area target="_blank" alt="MB 202" title="MB 202" href="MB 202.jpg" coords="1214,478,1275,476,1279,638,1214,636" shape="poly">
+    <area target="_blank" alt="MB 201" title="MB 201" href="MB 201.jpg" coords="1212,647,1278,648,1281,766,1210,768" shape="poly">
+    <area target="_blank" alt="Elementary Library" title="Elementary Library" href="ELEMENTARY LIBRARY_.jpg" coords="1073,893,1275,998" shape="rect">
+    <area target="_blank" alt="NB 202" title="NB 202" href="NB 202.jpg" coords="921,493,1010,643" shape="rect">
+    <area target="_blank" alt="NB 201" title="NB 201" href="NB 201.jpg" coords="919,653,1012,830" shape="rect">
+    <area target="_blank" alt="High School Library" title="High School Library" href="HIGH SCHOOL LIBRARY_.jpg" coords="814,407,897,833" shape="rect">
+    <area target="_blank" alt="Office Of The AVP" title="Office Of The AVP" href="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg" coords="812,266,895,396" shape="rect">
+    <area target="_blank" alt="SHS 210" title="SHS 210" href="" coords="958,891,1064,998" shape="rect">
+    <area target="_blank" alt="SHS 209" title="SHS 209" href="SHS 209.jpg" coords="867,892,946,1000" shape="rect">
+    <area target="_blank" alt="SHS 208" title="SHS 208" href="SHS 208.jpg" coords="771,892,852,1000" shape="rect">
+    <area target="_blank" alt="SHS 207" title="SHS 207" href="SHS 207.jpg" coords="669,894,757,999" shape="rect">
+    <area target="_blank" alt="SHS 206" title="SHS 206" href="SHS 206.jpg" coords="580,892,655,997" shape="rect">
+    <area target="_blank" alt="SHS 205" title="SHS 205" href="SHS 205.jpg" coords="486,893,570,999" shape="rect">
+    <area target="_blank" alt="SHS 204" title="SHS 204" href="SHS 204.jpg" coords="402,893,475,998" shape="rect">
+    <area target="_blank" alt="SHS 203" title="SHS 203" href="SHS 302.jpg" coords="314,891,390,999" shape="rect">
+    <area target="_blank" alt="SHS 201" title="SHS 201" href="SHS 201.jpg" coords="143,891,244,999" shape="rect">
+    <area target="_blank" alt="SHS 200" title="SHS 200" href="SHS 200.jpg" coords="29,893,131,998" shape="rect">
+    <area target="_blank" alt="NCB 201" title="NCB 201" href="NCB 201.jpg" coords="25,616,92,766" shape="rect">
+    <area target="_blank" alt="CB 201" title="CB 201" href="CB 201.jpg" coords="529,293,607,397" shape="rect">
+    <area target="_blank" alt="CB 202" title="CB 202" href="CB 202.jpg" coords="451,291,519,397" shape="rect">
+    <area target="_blank" alt="CB 203" title="CB 203" href="CB 203.jpg" coords="359,287,440,397" shape="rect">
+    <area target="_blank" alt="CB 204" title="CB 204" href="CB 204.jpg" coords="279,290,352,399" shape="rect">
+    <area target="_blank" alt="CB 205" title="CB 205" href="CB 205.jpg" coords="277,625,352,737" shape="rect">
+    <area target="_blank" alt="CB 206" title="CB 206" href="CB 206.jpg" coords="363,631,443,735" shape="rect">
+    <area target="_blank" alt="CB 207" title="CB 207" href="CB 207.jpg" coords="451,629,523,735" shape="rect">
+    <area target="_blank" alt="CB 208" title="CB 208" href="CB 208(1).jpg" coords="531,632,607,740" shape="rect">
+    <area target="_blank" alt="CB 209" title="CB 209" href="CB 209.jpg" coords="269,458,358,567" shape="rect">
+    <area target="_blank" alt="CB 210" title="CB 210" href="CB 210.jpg" coords="363,457,444,567" shape="rect">
+    <area target="_blank" alt="CB 211" title="CB 211" href="CB 211.jpg" coords="507,457,608,569" shape="rect">
+    <area target="_blank" alt="NF 203" title="NF 203" href="NF 203.jpg" coords="393,61,474,68,463,180,382,172" shape="poly">
+    <area target="_blank" alt="NF 204" title="NF 204" href="NF 204.jpg" coords="487,68,574,76,564,187,475,178" shape="poly">
+    <area target="_blank" alt="NF 205" title="NF 205" href="NF 205.jpg" coords="588,77,664,84,657,193,577,188" shape="poly">
+</map>
+    </template>
+
+    <template id="thirdfloor">
+         <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button>Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+        
+<div class="map-wrapper">
+  <img
+    src="f2.jpg"
+    class="responsive-map"
+    usemap="#image-map"
+    data-original-width="1400"
+    data-original-height="1000"
+  >
+</div>
+
+
+<map name="image-map">
+    <area target="_blank" alt="MB 303" title="MB 303" href="MB 303.jpg" coords="1290,99,1365,283" shape="rect">
+    <area target="_blank" alt="MB 302" title="MB 302" href="MB 302.jpg" coords="1288,295,1365,493" shape="rect">
+    <area target="_blank" alt="MB 301" title="MB 301" href="MB 301.jpg" coords="1290,507,1366,661" shape="rect">
+    <area target="_blank" alt="SHS 311" title="SHS 311" href="SHS 311.jpg" coords="1260,800,1365,917" shape="rect">
+    <area target="_blank" alt="SHS 310" title="SHS 310" href="SHS 310.jpg" coords="1146,800,1249,917" shape="rect">
+    <area target="_blank" alt="SHS 309" title="SHS 309" href="SHS 309.jpg" coords="1022,801,1136,914" shape="rect">
+    <area target="_blank" alt="SHS 308" title="SHS 308" href="SHS 308.jpg" coords="915,800,1010,919" shape="rect">
+    <area target="_blank" alt="SHS 307" title="SHS 307" href="SHS 307.jpg" coords="813,798,909,920" shape="rect">
+    <area target="_blank" alt="SHS 306" title="SHS 306" href="SHS 306.jpg" coords="707,803,803,919" shape="rect">
+    <area target="_blank" alt="SHS 305" title="SHS 305" href="SHS 305.jpg" coords="611,798,696,917" shape="rect">
+    <area target="_blank" alt="SHS 304" title="SHS 304" href="SHS 304.jpg" coords="513,803,602,920" shape="rect">
+    <area target="_blank" alt="SHS 303" title="SHS 303" href="SHS 303.jpg" coords="415,798,502,915" shape="rect">
+    <area target="_blank" alt="SHS 302" title="SHS 302" href="SHS 302.jpg" coords="324,800,406,917" shape="rect">
+    <area target="_blank" alt="SHS 301" title="SHS 301" href="SHS 301.jpg" coords="139,801,247,915" shape="rect">
+    <area target="_blank" alt="SHS 300" title="SHS 300" href="SHS 300.jpg" coords="11,798,128,915" shape="rect">
+    <area target="_blank" alt="NCB 301" title="NCB 301" href="NCB 301.jpg" coords="15,505,86,670" shape="rect">
+    <area target="_blank" alt="CB 301" title="CB 301" href="CB 301.jpg" coords="554,128,641,269" shape="rect">
+    <area target="_blank" alt="CB 302" title="CB 302" href="CB 302.jpg" coords="470,122,543,269" shape="rect">
+    <area target="_blank" alt="CB 303" title="CB 303" href="CB 303.jpg" coords="370,120,463,269" shape="rect">
+    <area target="_blank" alt="CB 304" title="CB 304" href="CB 304.jpg" coords="286,123,364,267" shape="rect">
+    <area target="_blank" alt="CB 305" title="CB 305" href="CB 305.jpg" coords="283,518,364,663" shape="rect">
+    <area target="_blank" alt="CB 306" title="CB 306" href="CB 306.jpg" coords="374,518,463,660" shape="rect">
+    <area target="_blank" alt="CB 307" title="CB 307" href="CB 307.jpg" coords="470,518,549,660" shape="rect">
+    <area target="_blank" alt="CB 308" title="CB 308" href="CB 308.jpg" coords="554,518,641,663" shape="rect">
+    <area target="_blank" alt="CB 309 Defense Tactical Room" title="CB 309 Defense Tactical Room" href="CB 309.jpg" coords="272,328,370,452" shape="rect">
+    <area target="_blank" alt="CB 310 COURT ROOM" title="CB 310 COURT ROOM" href="COURT ROOM CB 310.jpg" coords="375,331,466,454" shape="rect">
+    <area target="_blank" alt="CB 311 " title="CB 311 " href="DEFENSE TACTIC ROOM CB 311.jpg" coords="531,333,638,458" shape="rect">
+</map>
+    </template>
+
+    <template id="fourthfloor">
+        <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button>Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+<div class="map-wrapper">
+  <img
+    src="f4.jpg"
+    class="responsive-map"
+    usemap="#image-map"
+    data-original-width="1400"
+    data-original-height="1000"
+  >
+</div>
+
+
+<map name="image-map">
+    <area target="_blank" alt="Bench" title="Bench" href="" coords="699,699,1113,881" shape="rect">
+    <area target="_blank" alt="Booth" title="Booth" href="" coords="616,18,930,135" shape="rect">
+    <area target="_blank" alt="Court" title="Court" href="" coords="502,225,1065,670" shape="rect">
+    <area target="_blank" alt="NCB 401" title="NCB 401" href="NCB 401.jpg" coords="100,623,225,898" shape="rect">
+</map>
+    </template>
+
+    <template id="searchbar">
+        <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button>Fourth Floor</button>
+            <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+       <div class="ser"><h3>Search Any Room Here</h3></div>
+    <div class="searchb">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Type to search..."
+        onkeyup="searchItem()">
+</div>
+<div class="room-container">
+    <div id="guest_room"><img src="NF 105 GUEST ROOM_.jpg"><p>Guest Room</p></div>
+    <div id="hot_kitchen"><img src="HOT KITCHEN_.jpg"><p>Hot Kitchen</p></div>
+    <div id="nf_chemistry_laboratory"><img src="NF 101 Chemistry Laboratory_.jpg"><p>NF CHEMISTRY LABORATORY</p></div>
+    <div id="asian_kitchen"><img src="Asian and Cold Kitchen.jpg"><p>ASIAN KITCHEN</p></div>
+    <div id="cold_kitchen"><img src="Asian and Cold Kitchen.jpg"><p>COLD KITCHEN</p></div>
+    <div id="function_room"><img src="FUNCTION ROOM.jpg"><p>FUNCTION ROOM</p></div>
+    <div id="stock_room"><img src="STO.jpg"><p>STOCK ROOM</p></div>
+    <div id="mock_travel_office"><img src="MOCK TRAVEL OFFICE.jpg"><p>MOCK TRAVEL OFFICE</p></div>
+    <div id="record_section"><img src="RECORDS SECTION_.jpg"><p>RECORD SECTION</p></div>
+    <div id="office_of_elementary_principal"><img src="OFFICE OF THE ELEMENTARY PRINCIPAL_.jpg"><p>OFFICE OF ELEMENTARY PRINCIPAL</p></div>
+    <div id="nf_108_science_laboratory_stockroom"><img src="NF 108 SCIENCE LABORATORY STOCK ROOM.jpg"><p>NF 108 SCIENCE LABORATORY</p></div>
+    <div id="nf109_chemistry"><img src="NF 109 CHEMISTRY_.jpg"><p>NF 109 Chemistry</p></div>
+    <div id="nf110_biology"><img src="NF 110 BIOLOGY_.jpg"><p>NF 110 BIOLOGY</p></div>
+    <div id="nf111_physics_laboratory"><img src="NF 111 PHYSICS LABORATORY_.jpg"><p>NF 111 PHISICAL LABORATORY</p></div>
+    <div id="consultation_rm"><img src=""><p>Consultation Room</p></div>
+    <div id="mb102"><img src="MB 102.jpg"><p>MB 102</p></div>
+    <div id="mb101"><img src="MB 101.jpg"><p>MB 101</p></div>
+    <div id="nb102"><img src="NB 101 & NB 202.jpg"><p>NB 102</p></div>
+    <div id="nb101"><img src="NB 101 & NB 202.jpg"><p>NB 101</p></div>
+    <div id="tle_room"><img src="TLE ROOM.jpg"><p>TLE Room</p></div>
+    <div id="ba101_midwifery"><img src="MIDWIFERY BA 101.jpg"><p>BA 101 Midwifery</p></div>
+    <div id="ba102_audio_visual_room"><img src="AUDIO VISUAL ROOM BA 102.jpg"><p>BA 102 AUdio Visual Room</p></div>
+    <div id="ba103_junior_high_faculty"><img src="JUNIOR HIGH FACULTY_.jpg"><p>BA 103 Junior High Faculty</p></div>
+    <div id="osa"><img src="OFFICE FOR STUDENT AFFAIRS_.jpg"><p>OSA</p></div>
+    <div id="digicom"><img src="DigiCom.jpg"><p>DiGicom</p></div>
+    <div id="guidance_office"><img src="GUIDANCE OFFICE.jpg"><p>GUIDANCE OFFICE</p></div>
+    <div id="bursar"><img src="BURSAR.jpg"><p>Bursar</p></div>
+    <div id="stage"><img src="CB GROUNDS_STAGE.jpg"><p>STAGE</p></div>
+    <div id="shs110"><img src="SHS 110.jpg"><p>SHS 110</p></div>
+    <div id="shs109"><img src="SHS 109.jpg"><p>SHS 109</p></div>
+    <div id="shs108"><img src=""><p>SHS 108</p></div>
+    <div id="shs107"><img src=""><p>SHS 107</p></div>
+    <div id="shs106"><img src="SHS 106.jpg"><p>SHS 106</p></div>
+    <div id="shs105"><img src="SHS 105.jpg"><p>SHS 105</p></div>
+    <div id="office_of_the_vice_principal"><img src="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg"><p>Office of The vice Principal</p></div>
+    <div id="clinic"><img src="CLINIC SHS 101.jpg"><p>Clinic</p></div>
+    <div id="senior_high_school_faculty"><img src="SENIOR HIGH FACULTY_.jpg"><p>Senior High School Faculty</p></div>
+    <div id="office_of_the_high_school_principal"><img src="OFFICE OF THE HIGH SCHOOL PRINCIPAL_.jpg"><p>Office of the High School Principal</p></div>
+    <div id="maingate"><img src="MAIN GATE.jpg"><p>MAIN GATE</p></div>
+    <div id="canteen_maingate"><img src="CANTEEN(2).jpg"><p>Canteen Main gate</p></div>
+    <div id="canteen_mb"><img src="CANTEEN(1).jpg"><p>Canteen</p></div>
+    <div id="canteen_cb"><img src="CANTEEN.jpg"><p>Canteen</p></div>
+    <div id="ncb101"><img src="NC 101.jpg"><p>NCB 101</p></div>
+
+    <div id="nf201_computer_lab"><img src="NF 201 COMPUTER LABORATORY 1.jpg"><p>NF 201 Computer Lab</p></div>
+    <div id="nf202_computer_lab"><img src="NF 202 COMPUTER LABORATORY 2.jpg"><p>NF 202 CompuTEr Lab</p></div>
+    <div id="nf203"><img src="NF 203.jpg"><p>NF 203</p></div>
+    <div id="nf204"><img src="NF 204.jpg"><p>NF 204</p></div>
+    <div id="nf205"><img src="NF 205.jpg"><p>NF 205</p></div>
+    <div id="college_library"><img src="NF 206 COLLEGE LIBRARY_.jpg"><p>College Library</p></div>
+    <div id="nf208_deans_office"><img src="DEAN_S OFFICE.jpg"><p>NF 208 Dean's Office</p></div>
+    <div id="nf209"><img src=""><p>NF 209</p></div>
+    <div id="nf210"><img src="NF 210.jpg"><p>NF210</p></div>
+    <div id="nf211"><img src="NF 211.jpg"><p>NF211</p></div>
+    <div id="accredation_room"><img src="ACCREDITATION & SERVER ROOM.jpg"><p>Accreditation room</p></div>
+    <div id="mb203"><img src="MB 203.jpg"><p>MB 203</p></div>
+    <div id="mb202"><img src="MB 202.jpg"><p>MB 202</p></div>
+    <div id="mb201"><img src="MB 201.jpg"><p>MB 201</p></div>
+    <div id="nb202"><img src="NB 202.jpg"><p>NB 202</p></div>
+    <div id="nb201"><img src="NB 201.jpg"><p>NB 201</p></div>
+    <div id="office_of_avp"><img src="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg"><p>office of Avp</p></div>
+    <div id="high_school_library"><img src="HIGH SCHOOL LIBRARY_.jpg"><p>High School library</p></div>
+    <div id="elementary_library"><img src="ELEMENTARY LIBRARY_.jpg"><p>Elementary LIBRARY</p></div>
+    <div id="shs210"><img src=""><p>SHS 210</p></div>
+    <div id="shs209"><img src="SHS 209.jpg"><p>SHS 209</p></div>
+    <div id="shs208"><img src="SHS 208.jpg"><p>SHS 208</p></div>
+    <div id="shs207"><img src="SHS 207.jpg"><p>SHS 207</p></div>
+    <div id="shs206"><img src="SHS 206.jpg"><p>SHS 206</p></div>
+    <div id="shs205"><img src="SHS 205.jpg"><p>SHS 205</p></div>
+    <div id="shs204"><img src="SHS 204.jpg"><p>SHS 204</p></div>
+    <div id="shs203"><img src=""><p>SHS 203</p></div>
+    <div id="shs202"><img src=""><p>SHS 202</p></div>
+    <div id="shs201"><img src="SHS 201.jpg"><p>SHS 201</p></div>
+    <div id="ncb201"><img src="NCB 201.jpg"><p>NCB 201</p></div>
+    <div id="cb201"><img src="CB 201.jpg"><p>CB 201</p></div>
+    <div id="cb202"><img src="CB 202.jpg"><p>CB 202</p></div>
+    <div id="cb203"><img src="CB 203.jpg"><p>CB 203</p></div>
+    <div id="cb204"><img src="CB 204.jpg"><p>CB 204</p></div>
+    <div id="cb205"><img src="CB 205.jpg"><p>CB 205</p></div>
+    <div id="cb206"><img src="CB 206.jpg"><p>CB 206</p></div>
+    <div id="cb207"><img src="CB 207.jpg"><p>CB 207</p></div>
+    <div id="cb208"><img src="CB 208.jpg"><p>CB 208</p></div>
+    <div id="cb209"><img src="CB 209.jpg"><p>CB 209</p></div>
+    <div id="cb210"><img src="CB 210.jpg"><p>CB 210</p></div>
+    <div id="cb211"><img src="CB 211.jpg"><p>CB 211</p></div>
+
+    <div id="mb303"><img src="MB 303.jpg"><p>MB 303</p></div>
+    <div id="mb302"><img src="MB 302.jpg"><p>MB 302</p></div>
+    <div id="mb301"><img src="MB 301.jpg"><p>MB 301</p></div>
+    <div id="shs311"><img src="SHS 311.jpg"><p>SHS 311</p></div>
+    <div id="shs310"><img src="SHS 310.jpg"><p>SHS 310</p></div>
+    <div id="shs309"><img src="SHS 309.jpg"><p>SHS 309</p></div>
+    <div id="shs308"><img src="SHS 308.jpg"><p>SHS 308</p></div>
+    <div id="shs307"><img src="SHS 307.jpg"><p>SHS 307</p></div>
+    <div id="shs306"><img src="SHS 306.jpg"><p>SHS 306</p></div>
+    <div id="shs305"><img src="SHS 305.jpg"><p>SHS 305</p></div>
+    <div id="shs304"><img src="SHS 304.jpg"><p>SHS 304</p></div>
+    <div id="shs303"><img src="SHS 303.jpg"><p>SHS 303</p></div>
+    <div id="shs302"><img src="SHS 302.jpg"><p>SHS 302</p></div>
+    <div id="shs301"><img src="SHS 301.jpG"><p>SHS 301</p></div>
+    <div id="shs300"><img src="SHS 300.jpg"><p>SHS 300</p></div>
+    <div id="ncb301"><img src="NCB 301.jpg"><p>NCB 301</p></div>
+    <div id="cb301"><img src="CB 301.jpg"><p>CB 301</p></div>
+    <div id="cb302"><img src="CB 302.jpg"><p>CB 302</p></div>
+    <div id="cb303"><img src="CB 303.jpg"><p>CB 303</p></div>
+    <div id="cb304"><img src="CB 304.jpg"><p>CB 304</p></div>
+    <div id="cb305"><img src="CB 305.jpg"><p>CB 305</p></div>
+    <div id="cb306"><img src="CB 306.jpg"><p>CB 306</p></div>
+    <div id="cb307"><img src="CB 307.jpg"><p>CB 307</p></div>
+    <div id="cb308"><img src="CB 308.jpg"><p>CB 308</p></div>
+    <div id="cb309"><img src="CB 309.jpg"><p>CB 309</p></div>
+    <div id="cb310_courtroom"><img src="COURT ROOM CB 310.jpg"><p>CB 310 Court Room</p></div>
+    <div id="cb311_defense_tactic_room"><img src="DEFENSE TACTIC ROOM CB 311.jpg"><p>CB 311 Defense Tactic Room</p></div>
+
+    <div id="booth"><img src=""><p>Booth</p></div>
+    <div id="ncb401"><img src="NCB 401.jpg"><p>NCB 401</p></div>
+    <div id="bench"><img src=""><p>Bench</p></div>
+    <div id="court"><img src=""><p>Court</p></div>
+</div>
+
+    </template>
+    <template id="admin_settings">
+    <nav>
+        <div class="navi">
+            <button onclick="loadPage('searchbar')">Open Search Page</button>
+            <button onclick="loadPage('home')">Back Home</button>
+        </div>
+    </nav>
+
+    <div style="padding:20px">
+        <h2>Admin Settings</h2>
+
+        <label>Select Room:</label><br>
+        <select id="roomSelect"></select><br><br>
+
+        <label>Rename Room:</label><br>
+        <input type="text" id="newText" placeholder="New room name"><br><br>
+
+        <label>Change Image:</label><br>
+        <input type="file" id="newImage"><br><br>
+
+        <button onclick="applyChanges()">Apply Changes</button>
+    </div>
+</template>
+
+<script>
+function resizeAllMaps() {
+  document.querySelectorAll(".responsive-map").forEach(img => {
+    if (!img.complete) return;
+
+    const mapName = img.getAttribute("usemap")?.replace("#", "");
+    const map = document.querySelector(`map[name="${mapName}"]`);
+    if (!map) return;
+
+    const originalWidth = img.dataset.originalWidth;
+    const originalHeight = img.dataset.originalHeight;
+    if (!originalWidth || !originalHeight) return;
+
+    const scaleX = img.clientWidth / originalWidth;
+    const scaleY = img.clientHeight / originalHeight;
+
+    map.querySelectorAll("area").forEach(area => {
+      if (!area.dataset.originalCoords) {
+        area.dataset.originalCoords = area.coords;
+      }
+
+      const coords = area.dataset.originalCoords.split(",").map(Number);
+      const scaledCoords = coords.map((coord, index) =>
+        index % 2 === 0
+          ? Math.round(coord * scaleX)
+          : Math.round(coord * scaleY)
+      );
+
+      area.coords = scaledCoords.join(",");
+    });
+  });
+}
+
+window.addEventListener("load", resizeAllMaps);
+window.addEventListener("resize", resizeAllMaps);
+
+// Call again when templates change
+const observer = new MutationObserver(resizeAllMaps);
+observer.observe(document.body, { childList: true, subtree: true });
+</script>
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palit page template ito</title>
+    <link rel="icon" type="image/jpg" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="page"></div>
+    <template id="student">
+        <header><div class="image"><img src="R.png"><h2>ARELLANO UNIVERSITY JOSE RIZAL CAMPUS</h2><img src="C.png"></div></header>
+        <div class="stu">
+            <form id="dent">
+            <h2 id="st">A.U.M.S</h2>
+            <label for="btn1">For Student:</label>
+            <button id="btn1" onclick="loadPage('home')">Start</button><br><br>
+            <label for="btn2">For Admin Only:</label>
+            <button id="btn2" onclick="loadPage('admin')">ADMIN KEY</button>
+
+        </form>
+        </div>
+    </template>
+
+
+
+    <template id="admin">
+
+        <header>
+  <div class="image">
+    <img src="R.png" alt="R Logo">
+    <h2>ARELLANO UNIVERSITY JOSE RIZAL CAMPUS</h2>
+    <img src="C.png" alt="C Logo">
+  </div>
+</header>
+
+<!-- LOGIN FORM -->
+<div id="stu" class="active">
+  <form id="dent" onsubmit="login(event)">
+    <h2 id="st">Admin Login</h2>
+    <label for="password">ADMIN KEY:</label><br><br>
+    <input id="passIn" type="password" placeholder="Type Password" required><br><br>
+    <button type="submit">Login</button><br><br>
+    <input type="checkbox" onclick="togglePass()"> Show Password<br><br>
+    <button type="button" onclick="forgotPassword()">Forgot Password?</button>
+    <button type="button" onclick="createPassword()">Create Password</button>
+  </form>
+</div>
+
+<!-- ADMIN SETTINGS -->
+<div id="admin_settings" class="inactive">
+  <nav>
+    <div class="navi">
+      <button onclick="loadPage('searchbar')">Open Search Page</button>
+      <button onclick="loadPage('home')">Back Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div style="padding:20px">
+    <h2>Admin Settings</h2>
+
+    <!-- Room Management -->
+    <label>Select Room:</label><br>
+    <select id="roomSelect"></select><br><br>
+
+    <label>Rename Room:</label><br>
+    <input type="text" id="newText" placeholder="New room name"><br><br>
+
+    <label>Change Image:</label><br>
+    <input type="file" id="newImage"><br><br>
+
+    <button onclick="applyChanges()">Apply Changes</button>
+    <hr>
+
+    <!-- Password Management -->
+    <h3>Password Management</h3>
+    <button onclick="changePassword()">Change Admin Password</button>
+  </div>
+</div>
+
+
+    </template>
+
+    <template id="home">
+        <nav>
+            <div class="navi">
+            <button>Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+            <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+        <div class="map-wrapper">
+          <img
+            src="f1.jpg"
+            class="responsive-map"
+            usemap="#image-map-ground"
+            width="1382"
+            height="1019"
+          >
+        </div>
+
+        <map name="image-map-ground">
+            <area target="_blank" alt="NF 101 Chemistry Laboratory" title="NF 101 Chemistry Laboratory" href="NF 101 Chemistry Laboratory_.jpg" coords="119,55,237,66,230,170,110,159" shape="poly">
+            <area target="_blank" alt="STO" title="STO" href="STO(1).jpg" coords="104,167,225,175,225,216,97,208" shape="poly">
+            <area target="_blank" alt="Comport Room" title="Comport Room" href="CR_.jpg" coords="249,67,298,71,298,111,243,107" shape="poly">
+            <area target="_blank" alt="Hot kitchen" title="Hot kitchen" href="HOT KITCHEN_.jpg" coords="316,73,399,82,390,187,305,180" shape="poly">
+            <area target="_blank" alt="Asian Kitchen " title="Asian Kitchen " href="Asian and Cold Kitchen.jpg" coords="413,82,433,83,426,192,403,187" shape="poly">
+            <area target="_blank" alt="Cold kitchen" title="Cold kitchen" href="Asian and Cold Kitchen.jpg" coords="446,85,469,85,462,193,436,191" shape="poly">
+            <area target="_blank" alt="Function Room" title="Function Room" href="FUNCTION ROOM.jpg" coords="485,88,564,94,558,199,476,193" shape="poly">
+            <area target="_blank" alt="Guest Room" title="Guest Room" href="NF 105 GUEST ROOM_.jpg" coords="576,95,607,98,598,205,565,201" shape="poly">
+            <area target="_blank" alt="STO" title="STO" href="STO.jpg" coords="616,97,658,100,646,206,607,206" shape="poly">
+            <area target="_blank" alt="Mock travel Offce" title="Mock travel Offce" href="MOCK TRAVEL OFFICE.jpg" coords="738,108,785,110,780,196,731,190" shape="poly">
+            <area target="_blank" alt="Record Section" title="Record Section" href="RECORDS SECTION_.jpg" coords="793,112,906,123,899,207,786,196" shape="poly">
+            <area target="_blank" alt="Office Of Elementary Principal" title="Office Of Elementary Principal" href="OFFICE OF THE ELEMENTARY PRINCIPAL_.jpg" coords="914,127,957,128,954,213,908,207" shape="poly">
+            <area target="_blank" alt="NF 109 Chemistry" title="NF 109 Chemistry" href="NF 101 Chemistry Laboratory_.jpg" coords="1085,32,1152,30,1153,112,1085,114" shape="poly">
+            <area target="_blank" alt="NF 110 Biology " title="NF 110 Biology " href="NF 110 BIOLOGY_.jpg" coords="1163,35,1236,30,1241,117,1164,114" shape="poly">
+            <area target="_blank" alt="NF 111 Physical Laboratory" title="NF 111 Physical Laboratory" href="NF 111 PHYSICS LABORATORY_.jpg" coords="1247,32,1316,33,1321,116,1246,116" shape="poly">
+            <area target="_blank" alt="Consulttion Room" title="Consulttion Room" href="" coords="1187,265,1248,265,1248,315,1187,317" shape="poly">
+            <area target="_blank" alt="MB 102" title="MB 102" href="MB 102.jpg" coords="1182,329,1189,473,1253,475,1251,327" shape="poly">
+            <area target="_blank" alt="MB 101" title="MB 101" href="MB 101.jpg" coords="1186,480,1247,481,1250,638,1184,637" shape="poly">
+            <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(3).jpg" coords="1186,650,1245,649,1250,757,1187,759" shape="poly">
+            <area target="_blank" alt="TLE Room" title="TLE Room" href="TLE ROOM.jpg" coords="903,409,1048,408,1047,474,903,474" shape="poly">
+            <area target="_blank" alt="NB 102" title="NB 102" href="NB 101 & NB 202.jpg" coords="903,496,991,496,992,641,901,646" shape="poly">
+            <area target="_blank" alt="NB 101" title="NB 101" href="NB 101 & NB 202.jpg" coords="903,654,988,652,992,816,903,819" shape="poly">
+            <area target="_blank" alt="Store" title="Store" href="" coords="806,293,870,289,871,324,804,327" shape="poly">
+            <area target="_blank" alt="BA 101 Midwifery" title="BA 101 Midwifery" href="MIDWIFERY BA 101.jpg" coords="799,408,876,406,877,528,799,528" shape="poly">
+            <area target="_blank" alt="BA 102 Audio Visual Room" title="BA 102 Audio Visual Room" href="AUDIO VISUAL ROOM BA 102.jpg" coords="798,536,876,532,873,679,799,677" shape="poly">
+            <area target="_blank" alt="BA 103 Junior High Faculty" title="BA 103 Junior High Faculty" href="JUNIOR HIGH FACULTY_.jpg" coords="799,683,876,683,877,821,799,817" shape="poly">
+            <area target="_blank" alt="SHS 110" title="SHS 110" href="SHS 110.jpg" coords="1162,886,1247,880,1248,987,1156,983" shape="poly">
+            <area target="_blank" alt="SHS 109" title="SHS 109" href="SHS 109.jpg" coords="1048,885,1146,883,1147,985,1048,983" shape="poly">
+            <area target="_blank" alt="SHS 108" title="SHS 108" href="" coords="938,885,1040,879,1041,982,942,984" shape="poly">
+            <area target="_blank" alt="SHS 107" title="SHS 107" href="" coords="846,882,930,881,931,981,852,984" shape="poly">
+            <area target="_blank" alt="SHS 106" title="SHS 106" href="SHS 106.jpg" coords="756,880,840,880,840,985,756,983" shape="poly">
+            <area target="_blank" alt="SHS 105" title="SHS 105" href="SHS 105.jpg" coords="659,882,747,882,747,984,658,982" shape="poly">
+            <area target="_blank" alt="Office Of The Vice Principal" title="Office Of The Vice Principal" href="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg" coords="573,883,646,882,646,982,574,983" shape="poly">
+            <area target="_blank" alt="Clinic" title="Clinic" href="CLINIC SHS 101.jpg" coords="482,882,562,878,560,982,485,986" shape="poly">
+            <area target="_blank" alt="Senior High School Faculty" title="Senior High School Faculty" href="SENIOR HIGH FACULTY_.jpg" coords="401,878,468,878,473,986,401,986" shape="poly">
+            <area target="_blank" alt="Office Of The High School Principal" title="Office Of The High School Principal" href="OFFICE OF THE HIGH SCHOOL PRINCIPAL_.jpg" coords="316,881,388,881,390,986,315,984" shape="poly">
+            <area target="_blank" alt="Guard House" title="Guard House" href="" coords="193,880,243,876,248,984,190,984" shape="poly">
+            <area target="_blank" alt="Main Gate" title="Main Gate" href="MAIN GATE.jpg" coords="120,879,177,877,180,990,121,996" shape="poly">
+            <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(2).jpg" coords="35,834,104,834,109,986,36,984" shape="poly">
+            <area target="_blank" alt="NCB 101" title="NCB 101" href="" coords="37,617,97,616,100,762,36,762" shape="poly">
+            <area target="_blank" alt="Bursar " title="Bursar " href="BURSAR.jpg" coords="225,297,324,297,324,389,229,387" shape="poly">
+            <area target="_blank" alt="Guidance Office" title="Guidance Office" href="GUIDANCE OFFICE.jpg" coords="332,299,426,296,430,386,330,388" shape="poly">
+            <area target="_blank" alt="DigiCom" title="DigiCom" href="DigiCom.jpg" coords="433,300,474,296,479,388,436,390" shape="poly">
+            <area target="_blank" alt="OSA" title="OSA" href="OFFICE FOR STUDENT AFFAIRS_.jpg" coords="487,302,531,298,529,388,487,389" shape="poly">
+            <area target="_blank" alt="Canteen" title="Canteen" href="CANTEEN(1).jpg" coords="537,303,603,298,607,386,537,388" shape="poly">
+            <area target="_blank" alt="STO" title="STO" href="STO(1).jpg" coords="637,300,677,300,677,386,635,385" shape="poly">
+            <area target="_blank" alt="Power RM" title="Power RM" href="" coords="637,650,676,650,677,731,637,731" shape="poly">
+            <area target="_blank" alt="NF 108 Science Laboratory Stock Room" title="NF 108 Science Laboratory Stock Room" href="NF 108 SCIENCE LABORATORY STOCK ROOM.jpg" coords="1010,32,1076,33,1074,113,1010,112" shape="poly">
+            <area target="_blank" alt="Stage" title="Stage" href="CB GROUNDS_STAGE.jpg" coords="462,438,608,470,607,645,486,658,407,638,333,525" shape="poly">
+        </map>
+    </template>
+
+    
+    <template id="secondfloor">
+        <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button>Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+        <div class="map-wrapper">
+          <img
+            src="f3.jpg"
+            class="responsive-map"
+            usemap="#image-map-second"
+            width="1382"
+            height="1019"
+          >
+        </div>
+
+        <map name="image-map-second">
+            
+            <area target="_blank" alt="NF 201 Computer Lab" title="NF 201 Computer Lab" href="NF 201 COMPUTER LABORATORY 1.jpg" coords="110,36,230,41,218,203,98,189" shape="poly">
+            <area target="_blank" alt="NF 202 Computer Lab" title="NF 202 Computer Lab" href="NF 202 COMPUTER LABORATORY 2.jpg" coords="305,53,381,56,371,170,298,166" shape="poly">
+            <area target="_blank" alt="College Library" title="College Library" href="NF 206 COLLEGE LIBRARY_.jpg" coords="751,93,969,112,964,194,743,173" shape="poly">
+            <area target="_blank" alt="NF 208 Dean's office" title="NF 208 Dean's office" href="DEAN_S OFFICE.jpg" coords="998,7,1001,96,1076,100,1074,11" shape="poly">
+            <area target="_blank" alt="NF 209" title="NF 209" href="NF 209.jpg" coords="1085,10,1162,7,1164,92,1086,98" shape="poly">
+            <area target="_blank" alt="NF 210" title="NF 210" href="NF 210.jpg" coords="1174,14,1257,8,1259,97,1175,94" shape="poly">
+            <area target="_blank" alt="NF 211" title="NF 211" href="NF 211.jpg" coords="1273,11,1344,10,1344,94,1270,97" shape="poly">
+            <area target="_blank" alt="Accredation RM" title="Accredation RM" href="ACCREDITATION & SERVER ROOM.jpg" coords="1202,231,1281,230,1281,269,1207,269" shape="poly">
+            <area target="_blank" alt="Server Room " title="Server Room " href="ACCREDITATION & SERVER ROOM.jpg" coords="1207,276,1280,274,1284,307,1208,306" shape="poly">
+            <area target="_blank" alt="MB 203" title="MB 203" href="MB 203.jpg" coords="1213,318,1278,314,1279,461,1213,466" shape="poly">
+            <area target="_blank" alt="MB 202" title="MB 202" href="MB 202.jpg" coords="1214,478,1275,476,1279,638,1214,636" shape="poly">
+            <area target="_blank" alt="MB 201" title="MB 201" href="MB 201.jpg" coords="1212,647,1278,648,1281,766,1210,768" shape="poly">
+            <area target="_blank" alt="Elementary Library" title="Elementary Library" href="ELEMENTARY LIBRARY_.jpg" coords="1073,893,1275,998" shape="rect">
+            <area target="_blank" alt="NB 202" title="NB 202" href="NB 202.jpg" coords="921,493,1010,643" shape="rect">
+            <area target="_blank" alt="NB 201" title="NB 201" href="NB 201.jpg" coords="919,653,1012,830" shape="rect">
+            <area target="_blank" alt="High School Library" title="High School Library" href="HIGH SCHOOL LIBRARY_.jpg" coords="814,407,897,833" shape="rect">
+            <area target="_blank" alt="Office Of The AVP" title="Office Of The AVP" href="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg" coords="812,266,895,396" shape="rect">
+            <area target="_blank" alt="SHS 210" title="SHS 210" href="" coords="958,891,1064,998" shape="rect">
+            <area target="_blank" alt="SHS 209" title="SHS 209" href="SHS 209.jpg" coords="867,892,946,1000" shape="rect">
+            <area target="_blank" alt="SHS 208" title="SHS 208" href="SHS 208.jpg" coords="771,892,852,1000" shape="rect">
+            <area target="_blank" alt="SHS 207" title="SHS 207" href="SHS 207.jpg" coords="669,894,757,999" shape="rect">
+            <area target="_blank" alt="SHS 206" title="SHS 206" href="SHS 206.jpg" coords="580,892,655,997" shape="rect">
+            <area target="_blank" alt="SHS 205" title="SHS 205" href="SHS 205.jpg" coords="486,893,570,999" shape="rect">
+            <area target="_blank" alt="SHS 204" title="SHS 204" href="SHS 204.jpg" coords="402,893,475,998" shape="rect">
+            <area target="_blank" alt="SHS 203" title="SHS 203" href="SHS 302.jpg" coords="314,891,390,999" shape="rect">
+            <area target="_blank" alt="SHS 201" title="SHS 201" href="SHS 201.jpg" coords="143,891,244,999" shape="rect">
+            <area target="_blank" alt="SHS 200" title="SHS 200" href="SHS 200.jpg" coords="29,893,131,998" shape="rect">
+            <area target="_blank" alt="NCB 201" title="NCB 201" href="NCB 201.jpg" coords="25,616,92,766" shape="rect">
+            <area target="_blank" alt="CB 201" title="CB 201" href="CB 201.jpg" coords="529,293,607,397" shape="rect">
+            <area target="_blank" alt="CB 202" title="CB 202" href="CB 202.jpg" coords="451,291,519,397" shape="rect">
+            <area target="_blank" alt="CB 203" title="CB 203" href="CB 203.jpg" coords="359,287,440,397" shape="rect">
+            <area target="_blank" alt="CB 204" title="CB 204" href="CB 204.jpg" coords="279,290,352,399" shape="rect">
+            <area target="_blank" alt="CB 205" title="CB 205" href="CB 205.jpg" coords="277,625,352,737" shape="rect">
+            <area target="_blank" alt="CB 206" title="CB 206" href="CB 206.jpg" coords="363,631,443,735" shape="rect">
+            <area target="_blank" alt="CB 207" title="CB 207" href="CB 207.jpg" coords="451,629,523,735" shape="rect">
+            <area target="_blank" alt="CB 208" title="CB 208" href="CB 208(1).jpg" coords="531,632,607,740" shape="rect">
+            <area target="_blank" alt="CB 209" title="CB 209" href="CB 209.jpg" coords="269,458,358,567" shape="rect">
+            <area target="_blank" alt="CB 210" title="CB 210" href="CB 210.jpg" coords="363,457,444,567" shape="rect">
+            <area target="_blank" alt="CB 211" title="CB 211" href="CB 211.jpg" coords="507,457,608,569" shape="rect">
+            <area target="_blank" alt="NF 203" title="NF 203" href="NF 203.jpg" coords="393,61,474,68,463,180,382,172" shape="poly">
+            <area target="_blank" alt="NF 204" title="NF 204" href="NF 204.jpg" coords="487,68,574,76,564,187,475,178" shape="poly">
+            <area target="_blank" alt="NF 205" title="NF 205" href="NF 205.jpg" coords="588,77,664,84,657,193,577,188" shape="poly">
+        </map>
+    </template>
+
+    
+    <template id="thirdfloor">
+         <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button>Third Floor</button>
+            <button onclick="loadPage('fourthfloor')">Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+        <div class="map-wrapper">
+          <img
+            src="f2.jpg"
+            class="responsive-map"
+            usemap="#image-map-third"
+            width="1382"
+            height="1019"
+          >
+        </div>
+
+        <map name="image-map-third">
+            <area target="_blank" alt="MB 303" title="MB 303" href="MB 303.jpg" coords="1290,99,1365,283" shape="rect">
+            <area target="_blank" alt="MB 302" title="MB 302" href="MB 302.jpg" coords="1288,295,1365,493" shape="rect">
+            <area target="_blank" alt="MB 301" title="MB 301" href="MB 301.jpg" coords="1290,507,1366,661" shape="rect">
+            <area target="_blank" alt="SHS 311" title="SHS 311" href="SHS 311.jpg" coords="1260,800,1365,917" shape="rect">
+            <area target="_blank" alt="SHS 310" title="SHS 310" href="SHS 310.jpg" coords="1146,800,1249,917" shape="rect">
+            <area target="_blank" alt="SHS 309" title="SHS 309" href="SHS 309.jpg" coords="1022,801,1136,914" shape="rect">
+            <area target="_blank" alt="SHS 308" title="SHS 308" href="SHS 308.jpg" coords="915,800,1010,919" shape="rect">
+            <area target="_blank" alt="SHS 307" title="SHS 307" href="SHS 307.jpg" coords="813,798,909,920" shape="rect">
+            <area target="_blank" alt="SHS 306" title="SHS 306" href="SHS 306.jpg" coords="707,803,803,919" shape="rect">
+            <area target="_blank" alt="SHS 305" title="SHS 305" href="SHS 305.jpg" coords="611,798,696,917" shape="rect">
+            <area target="_blank" alt="SHS 304" title="SHS 304" href="SHS 304.jpg" coords="513,803,602,920" shape="rect">
+            <area target="_blank" alt="SHS 303" title="SHS 303" href="SHS 303.jpg" coords="415,798,502,915" shape="rect">
+            <area target="_blank" alt="SHS 302" title="SHS 302" href="SHS 302.jpg" coords="324,800,406,917" shape="rect">
+            <area target="_blank" alt="SHS 301" title="SHS 301" href="SHS 301.jpg" coords="139,801,247,915" shape="rect">
+            <area target="_blank" alt="SHS 300" title="SHS 300" href="SHS 300.jpg" coords="11,798,128,915" shape="rect">
+            <area target="_blank" alt="NCB 301" title="NCB 301" href="NCB 301.jpg" coords="15,505,86,670" shape="rect">
+            <area target="_blank" alt="CB 301" title="CB 301" href="CB 301.jpg" coords="554,128,641,269" shape="rect">
+            <area target="_blank" alt="CB 302" title="CB 302" href="CB 302.jpg" coords="470,122,543,269" shape="rect">
+            <area target="_blank" alt="CB 303" title="CB 303" href="CB 303.jpg" coords="370,120,463,269" shape="rect">
+            <area target="_blank" alt="CB 304" title="CB 304" href="CB 304.jpg" coords="286,123,364,267" shape="rect">
+            <area target="_blank" alt="CB 305" title="CB 305" href="CB 305.jpg" coords="283,518,364,663" shape="rect">
+            <area target="_blank" alt="CB 306" title="CB 306" href="CB 306.jpg" coords="374,518,463,660" shape="rect">
+            <area target="_blank" alt="CB 307" title="CB 307" href="CB 307.jpg" coords="470,518,549,660" shape="rect">
+            <area target="_blank" alt="CB 308" title="CB 308" href="CB 308.jpg" coords="554,518,641,663" shape="rect">
+            <area target="_blank" alt="CB 309 Defense Tactical Room" title="CB 309 Defense Tactical Room" href="CB 309.jpg" coords="272,328,370,452" shape="rect">
+            <area target="_blank" alt="CB 310 COURT ROOM" title="CB 310 COURT ROOM" href="COURT ROOM CB 310.jpg" coords="375,331,466,454" shape="rect">
+            <area target="_blank" alt="CB 311 " title="CB 311 " href="DEFENSE TACTIC ROOM CB 311.jpg" coords="531,333,638,458" shape="rect">
+        </map>
+    </template>
+
+    
+    <template id="fourthfloor">
+        <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button>Fourth Floor</button>
+             <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+
+        <div class="map-wrapper">
+          <img
+            src="f4.jpg"
+            class="responsive-map"
+            usemap="#image-map-fourth"
+            width="1382"
+            height="1019"
+          >
+        </div>
+
+        <map name="image-map-fourth">
+            <area target="_blank" alt="Bench" title="Bench" href="" coords="699,699,1113,881" shape="rect">
+            <area target="_blank" alt="Booth" title="Booth" href="" coords="616,18,930,135" shape="rect">
+            <area target="_blank" alt="Court" title="Court" href="" coords="502,225,1065,670" shape="rect">
+            <area target="_blank" alt="NCB 401" title="NCB 401" href="NCB 401.jpg" coords="100,623,225,898" shape="rect">
+        </map>
+    </template>
+
+    <template id="searchbar">
+        <nav>
+            <div class="navi">
+            <button onclick="loadPage('home')">Ground Floor</button>
+            <button onclick="loadPage('secondfloor')">Second Floor</button>
+            <button onclick="loadPage('thirdfloor')">Third Floor</button>
+            <button>Fourth Floor</button>
+            <button><a target="_blank" href="360.html">360 View</a></button>
+             <button onclick="loadPage('searchbar')"><span class="material-symbols-outlined">
+search
+</span></button>
+            </div>
+        </nav>
+       <div class="ser"><h3>Search Any Room Here</h3></div>
+    <div class="searchb">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Type to search..."
+        onkeyup="searchItem()">
+</div>
+
+<div class="room-container">
+    <div id="guest_room"><img src="NF 105 GUEST ROOM_.jpg"><p>Guest Room</p></div>
+    <div id="hot_kitchen"><img src="HOT KITCHEN_.jpg"><p>Hot Kitchen</p></div>
+    <div id="nf_chemistry_laboratory"><img src="NF 101 Chemistry Laboratory_.jpg"><p>NF CHEMISTRY LABORATORY</p></div>
+    <div id="asian_kitchen"><img src="Asian and Cold Kitchen.jpg"><p>ASIAN KITCHEN</p></div>
+    <div id="cold_kitchen"><img src="Asian and Cold Kitchen.jpg"><p>COLD KITCHEN</p></div>
+    <div id="function_room"><img src="FUNCTION ROOM.jpg"><p>FUNCTION ROOM</p></div>
+    <div id="stock_room"><img src="STO.jpg"><p>STOCK ROOM</p></div>
+    <div id="mock_travel_office"><img src="MOCK TRAVEL OFFICE.jpg"><p>MOCK TRAVEL OFFICE</p></div>
+    <div id="record_section"><img src="RECORDS SECTION_.jpg"><p>RECORD SECTION</p></div>
+    <div id="office_of_elementary_principal"><img src="OFFICE OF THE ELEMENTARY PRINCIPAL_.jpg"><p>OFFICE OF ELEMENTARY PRINCIPAL</p></div>
+    <div id="nf_108_science_laboratory_stockroom"><img src="NF 108 SCIENCE LABORATORY STOCK ROOM.jpg"><p>NF 108 SCIENCE LABORATORY</p></div>
+    <div id="nf109_chemistry"><img src="NF 109 CHEMISTRY_.jpg"><p>NF 109 Chemistry</p></div>
+    <div id="nf110_biology"><img src="NF 110 BIOLOGY_.jpg"><p>NF 110 BIOLOGY</p></div>
+    <div id="nf111_physics_laboratory"><img src="NF 111 PHYSICS LABORATORY_.jpg"><p>NF 111 PHISICAL LABORATORY</p></div>
+    <div id="consultation_rm"><img src=""><p>Consultation Room</p></div>
+    <div id="mb102"><img src="MB 102.jpg"><p>MB 102</p></div>
+    <div id="mb101"><img src="MB 101.jpg"><p>MB 101</p></div>
+    <div id="nb102"><img src="NB 101 & NB 202.jpg"><p>NB 102</p></div>
+    <div id="nb101"><img src="NB 101 & NB 202.jpg"><p>NB 101</p></div>
+    <div id="tle_room"><img src="TLE ROOM.jpg"><p>TLE Room</p></div>
+    <div id="ba101_midwifery"><img src="MIDWIFERY BA 101.jpg"><p>BA 101 Midwifery</p></div>
+    <div id="ba102_audio_visual_room"><img src="AUDIO VISUAL ROOM BA 102.jpg"><p>BA 102 AUdio Visual Room</p></div>
+    <div id="ba103_junior_high_faculty"><img src="JUNIOR HIGH FACULTY_.jpg"><p>BA 103 Junior High Faculty</p></div>
+    <div id="osa"><img src="OFFICE FOR STUDENT AFFAIRS_.jpg"><p>OSA</p></div>
+    <div id="digicom"><img src="DigiCom.jpg"><p>DiGicom</p></div>
+    <div id="guidance_office"><img src="GUIDANCE OFFICE.jpg"><p>GUIDANCE OFFICE</p></div>
+    <div id="bursar"><img src="BURSAR.jpg"><p>Bursar</p></div>
+    <div id="stage"><img src="CB GROUNDS_STAGE.jpg"><p>STAGE</p></div>
+    <div id="shs110"><img src="SHS 110.jpg"><p>SHS 110</p></div>
+    <div id="shs109"><img src="SHS 109.jpg"><p>SHS 109</p></div>
+    <div id="shs108"><img src=""><p>SHS 108</p></div>
+    <div id="shs107"><img src=""><p>SHS 107</p></div>
+    <div id="shs106"><img src="SHS 106.jpg"><p>SHS 106</p></div>
+    <div id="shs105"><img src="SHS 105.jpg"><p>SHS 105</p></div>
+    <div id="office_of_the_vice_principal"><img src="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg"><p>Office of The vice Principal</p></div>
+    <div id="clinic"><img src="CLINIC SHS 101.jpg"><p>Clinic</p></div>
+    <div id="senior_high_school_faculty"><img src="SENIOR HIGH FACULTY_.jpg"><p>Senior High School Faculty</p></div>
+    <div id="office_of_the_high_school_principal"><img src="OFFICE OF THE HIGH SCHOOL PRINCIPAL_.jpg"><p>Office of the High School Principal</p></div>
+    <div id="maingate"><img src="MAIN GATE.jpg"><p>MAIN GATE</p></div>
+    <div id="canteen_maingate"><img src="CANTEEN(2).jpg"><p>Canteen Main gate</p></div>
+    <div id="canteen_mb"><img src="CANTEEN(1).jpg"><p>Canteen</p></div>
+    <div id="canteen_cb"><img src="CANTEEN.jpg"><p>Canteen</p></div>
+    <div id="ncb101"><img src="NC 101.jpg"><p>NCB 101</p></div>
+
+    <div id="nf201_computer_lab"><img src="NF 201 COMPUTER LABORATORY 1.jpg"><p>NF 201 Computer Lab</p></div>
+    <div id="nf202_computer_lab"><img src="NF 202 COMPUTER LABORATORY 2.jpg"><p>NF 202 CompuTEr Lab</p></div>
+    <div id="nf203"><img src="NF 203.jpg"><p>NF 203</p></div>
+    <div id="nf204"><img src="NF 204.jpg"><p>NF 204</p></div>
+    <div id="nf205"><img src="NF 205.jpg"><p>NF 205</p></div>
+    <div id="college_library"><img src="NF 206 COLLEGE LIBRARY_.jpg"><p>College Library</p></div>
+    <div id="nf208_deans_office"><img src="DEAN_S OFFICE.jpg"><p>NF 208 Dean's Office</p></div>
+    <div id="nf209"><img src=""><p>NF 209</p></div>
+    <div id="nf210"><img src="NF 210.jpg"><p>NF210</p></div>
+    <div id="nf211"><img src="NF 211.jpg"><p>NF211</p></div>
+    <div id="accredation_room"><img src="ACCREDITATION & SERVER ROOM.jpg"><p>Accreditation room</p></div>
+    <div id="mb203"><img src="MB 203.jpg"><p>MB 203</p></div>
+    <div id="mb202"><img src="MB 202.jpg"><p>MB 202</p></div>
+    <div id="mb201"><img src="MB 201.jpg"><p>MB 201</p></div>
+    <div id="nb202"><img src="NB 202.jpg"><p>NB 202</p></div>
+    <div id="nb201"><img src="NB 201.jpg"><p>NB 201</p></div>
+    <div id="office_of_avp"><img src="OFFICE OF THE ASSISTANT VICE PRESIDENT_.jpg"><p>office of Avp</p></div>
+    <div id="high_school_library"><img src="HIGH SCHOOL LIBRARY_.jpg"><p>High School library</p></div>
+    <div id="elementary_library"><img src="ELEMENTARY LIBRARY_.jpg"><p>Elementary LIBRARY</p></div>
+    <div id="shs210"><img src=""><p>SHS 210</p></div>
+    <div id="shs209"><img src="SHS 209.jpg"><p>SHS 209</p></div>
+    <div id="shs208"><img src="SHS 208.jpg"><p>SHS 208</p></div>
+    <div id="shs207"><img src="SHS 207.jpg"><p>SHS 207</p></div>
+    <div id="shs206"><img src="SHS 206.jpg"><p>SHS 206</p></div>
+    <div id="shs205"><img src="SHS 205.jpg"><p>SHS 205</p></div>
+    <div id="shs204"><img src="SHS 204.jpg"><p>SHS 204</p></div>
+    <div id="shs203"><img src=""><p>SHS 203</p></div>
+    <div id="shs202"><img src=""><p>SHS 202</p></div>
+    <div id="shs201"><img src="SHS 201.jpg"><p>SHS 201</p></div>
+    <div id="ncb201"><img src="NCB 201.jpg"><p>NCB 201</p></div>
+    <div id="cb201"><img src="CB 201.jpg"><p>CB 201</p></div>
+    <div id="cb202"><img src="CB 202.jpg"><p>CB 202</p></div>
+    <div id="cb203"><img src="CB 203.jpg"><p>CB 203</p></div>
+    <div id="cb204"><img src="CB 204.jpg"><p>CB 204</p></div>
+    <div id="cb205"><img src="CB 205.jpg"><p>CB 205</p></div>
+    <div id="cb206"><img src="CB 206.jpg"><p>CB 206</p></div>
+    <div id="cb207"><img src="CB 207.jpg"><p>CB 207</p></div>
+    <div id="cb208"><img src="CB 208.jpg"><p>CB 208</p></div>
+    <div id="cb209"><img src="CB 209.jpg"><p>CB 209</p></div>
+    <div id="cb210"><img src="CB 210.jpg"><p>CB 210</p></div>
+    <div id="cb211"><img src="CB 211.jpg"><p>CB 211</p></div>
+
+    <div id="mb303"><img src="MB 303.jpg"><p>MB 303</p></div>
+    <div id="mb302"><img src="MB 302.jpg"><p>MB 302</p></div>
+    <div id="mb301"><img src="MB 301.jpg"><p>MB 301</p></div>
+    <div id="shs311"><img src="SHS 311.jpg"><p>SHS 311</p></div>
+    <div id="shs310"><img src="SHS 310.jpg"><p>SHS 310</p></div>
+    <div id="shs309"><img src="SHS 309.jpg"><p>SHS 309</p></div>
+    <div id="shs308"><img src="SHS 308.jpg"><p>SHS 308</p></div>
+    <div id="shs307"><img src="SHS 307.jpg"><p>SHS 307</p></div>
+    <div id="shs306"><img src="SHS 306.jpg"><p>SHS 306</p></div>
+    <div id="shs305"><img src="SHS 305.jpg"><p>SHS 305</p></div>
+    <div id="shs304"><img src="SHS 304.jpg"><p>SHS 304</p></div>
+    <div id="shs303"><img src="SHS 303.jpg"><p>SHS 303</p></div>
+    <div id="shs302"><img src="SHS 302.jpg"><p>SHS 302</p></div>
+    <div id="shs301"><img src="SHS 301.jpG"><p>SHS 301</p></div>
+    <div id="shs300"><img src="SHS 300.jpg"><p>SHS 300</p></div>
+    <div id="ncb301"><img src="NCB 301.jpg"><p>NCB 301</p></div>
+    <div id="cb301"><img src="CB 301.jpg"><p>CB 301</p></div>
+    <div id="cb302"><img src="CB 302.jpg"><p>CB 302</p></div>
+    <div id="cb303"><img src="CB 303.jpg"><p>CB 303</p></div>
+    <div id="cb304"><img src="CB 304.jpg"><p>CB 304</p></div>
+    <div id="cb305"><img src="CB 305.jpg"><p>CB 305</p></div>
+    <div id="cb306"><img src="CB 306.jpg"><p>CB 306</p></div>
+    <div id="cb307"><img src="CB 307.jpg"><p>CB 307</p></div>
+    <div id="cb308"><img src="CB 308.jpg"><p>CB 308</p></div>
+    <div id="cb309"><img src="CB 309.jpg"><p>CB 309</p></div>
+    <div id="cb310_courtroom"><img src="COURT ROOM CB 310.jpg"><p>CB 310 Court Room</p></div>
+    <div id="cb311_defense_tactic_room"><img src="DEFENSE TACTIC ROOM CB 311.jpg"><p>CB 311 Defense Tactic Room</p></div>
+
+    <div id="booth"><img src=""><p>Booth</p></div>
+    <div id="ncb401"><img src="NCB 401.jpg"><p>NCB 401</p></div>
+    <div id="bench"><img src=""><p>Bench</p></div>
+    <div id="court"><img src=""><p>Court</p></div>
+</div>
+
+    </template>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+.list{
+    width: 100%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --list;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+.list::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.card::scroll-marker{
+    content: '';
+    height: 1em;
+    width: 1em;
+    background-color: rgb(150, 114, 114);
+    border-radius: 50%;
+}
+.card::scroll-marker:target-current{
+    background-color: black;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.list::scroll-button(right), .list::scroll-button(left){
+    content: '»';
+    border: none;
+    background-color: none;
+    font-size: 3rem;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --list;
+    position-area: right center;
+    translate: -100%;
+}
+.list::scroll-button(left){
+    content: '«';
+    position-area: left center;
+   translate: 100%;
+}
+.card{
+    scroll-snap-align: start;
+    flex:0 0 17em;
+    height: 23em;
+    background-color: violet;
+    padding: 1em;
+    border-radius: .5em;
+    text-align: center;
+    align-content: center;
+}
+img{
+     flex:0 0 10em;
+    height: 16em;
+}
+

@@ -1,0 +1,217 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Login</title>
+</head>
+<body>
+
+  <h2>Login</h2>
+  <input id="passInput" type="password" placeholder="Enter password">
+  <button onclick="login()">Login</button>
+  <br>
+  <input type="checkbox" onclick="togglePass()"> Show Password
+
+  <hr>
+
+  <h2>Change Password</h2>
+  <input id="oldPass" type="password" placeholder="Old password">
+  <input id="newPass" type="password" placeholder="New password">
+  <button onclick="changePassword()">Change Password</button>
+
+  <script>
+    // Set default password if none exists
+    if (!localStorage.getItem("myPassword")) {
+      localStorage.setItem("myPassword", "1234");
+    }
+
+    function login() {
+      let input = document.getElementById("passInput").value;
+      let savedPassword = localStorage.getItem("myPassword");
+
+      if (input === savedPassword) {
+        alert("Login success!");
+      } else {
+        alert("Wrong password!");
+      }
+    }
+
+    function changePassword() {
+      let oldPass = document.getElementById("oldPass").value;
+      let newPass = document.getElementById("newPass").value;
+      let savedPassword = localStorage.getItem("myPassword");
+
+      if (oldPass !== savedPassword) {
+        alert("Old password is incorrect!");
+        return;
+      }
+
+      if (newPass.length < 4) {
+        alert("New password must be at least 4 characters!");
+        return;
+      }
+
+      localStorage.setItem("myPassword", newPass);
+      alert("Password changed successfully!");
+    }
+
+    function togglePass() {
+      let input = document.getElementById("passInput");
+      input.type = (input.type === "password") ? "text" : "password";
+    }
+  </script>
+
+</body>
+</html-->
+
+<header>
+  <div class="image">
+    <img src="R.png" alt="R Logo">
+    <h2>ARELLANO UNIVERSITY JOSE RIZAL CAMPUS</h2>
+    <img src="C.png" alt="C Logo">
+  </div>
+</header>
+
+<!-- LOGIN FORM -->
+<div id="stu" class="active">
+  <form id="dent" onsubmit="login(event)">
+    <h2 id="st">Admin Login</h2>
+    <label for="password">ADMIN KEY:</label><br><br>
+    <input id="passIn" type="password" placeholder="Type Password" required><br><br>
+    <button type="submit">Login</button><br><br>
+    <input type="checkbox" onclick="togglePass()"> Show Password<br><br>
+    <button type="button" onclick="forgotPassword()">Forgot Password?</button>
+    <button type="button" onclick="createPassword()">Create Password</button>
+  </form>
+</div>
+
+<!-- ADMIN SETTINGS -->
+<div id="admin_settings" class="inactive">
+  <nav>
+    <div class="navi">
+      <button onclick="loadPage('searchbar')">Open Search Page</button>
+      <button onclick="loadPage('home')">Back Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div style="padding:20px">
+    <h2>Admin Settings</h2>
+
+    <!-- Room Management -->
+    <label>Select Room:</label><br>
+    <select id="roomSelect"></select><br><br>
+
+    <label>Rename Room:</label><br>
+    <input type="text" id="newText" placeholder="New room name"><br><br>
+
+    <label>Change Image:</label><br>
+    <input type="file" id="newImage"><br><br>
+
+    <button onclick="applyChanges()">Apply Changes</button>
+    <hr>
+
+    <!-- Password Management -->
+    <h3>Password Management</h3>
+    <button onclick="changePassword()">Change Admin Password</button>
+  </div>
+</div>
+
+<script>
+  // Initialize default password
+  if (!localStorage.getItem("myPassword")) {
+    localStorage.setItem("myPassword", "1234");
+  }
+
+  // LOGIN FUNCTION
+  function login(event) {
+    event.preventDefault(); // prevent form submission refresh
+    let input = document.getElementById("passIn").value;
+    let savedPassword = localStorage.getItem("myPassword");
+
+    if (input === savedPassword) {
+      // Show admin, hide login
+      document.getElementById("stu").classList.remove("active");
+      document.getElementById("stu").classList.add("inactive");
+
+      document.getElementById("admin_settings").classList.remove("inactive");
+      document.getElementById("admin_settings").classList.add("active");
+      document.getElementById("passIn").value = "";
+    } else {
+      alert("Wrong password!");
+    }
+  }
+
+  // LOGOUT
+  function logout() {
+    document.getElementById("admin_settings").classList.remove("active");
+    document.getElementById("admin_settings").classList.add("inactive");
+
+    document.getElementById("stu").classList.remove("inactive");
+    document.getElementById("stu").classList.add("active");
+    document.getElementById("passIn").value = "";
+  }
+
+  // SHOW/HIDE PASSWORD
+  function togglePass() {
+    let input = document.getElementById("passIn");
+    input.type = (input.type === "password") ? "text" : "password";
+  }
+
+  // FORGOT PASSWORD
+  function forgotPassword() {
+    let answer = prompt("Forgot Password? Enter the current password if known, or leave blank to reset:");
+    if (answer === localStorage.getItem("myPassword")) {
+      alert("You already know your password: " + localStorage.getItem("myPassword"));
+    } else {
+      let newPass = prompt("Enter new password:");
+      if (newPass) {
+        localStorage.setItem("myPassword", newPass);
+        alert("Password reset successfully!");
+      }
+    }
+  }
+
+  // CREATE PASSWORD (only if no password exists)
+  function createPassword() {
+    if (localStorage.getItem("myPassword")) {
+      alert("Password already exists. Use Change Password instead.");
+    } else {
+      let newPass = prompt("Create new admin password:");
+      if (newPass) {
+        localStorage.setItem("myPassword", newPass);
+        alert("Password created successfully!");
+      }
+    }
+  }
+
+  // CHANGE PASSWORD (while logged in)
+  function changePassword() {
+    let current = prompt("Enter current password:");
+    if (current === localStorage.getItem("myPassword")) {
+      let newPass = prompt("Enter new password:");
+      if (newPass) {
+        localStorage.setItem("myPassword", newPass);
+        alert("Password changed successfully!");
+      }
+    } else {
+      alert("Incorrect current password.");
+    }
+  }
+
+  // Dummy functions for room management (to prevent errors)
+  function applyChanges() {
+    alert("Room changes applied (placeholder function).");
+  }
+
+  function loadPage(page) {
+    alert("Loading page: " + page + " (placeholder function).");
+  }
+</script>
+
+<style>
+  .active { display: block; }
+  .inactive { display: none; }
+</style>
+

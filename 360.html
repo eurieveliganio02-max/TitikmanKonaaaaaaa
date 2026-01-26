@@ -1,0 +1,347 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUJRC Map Viewing</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #111;
+    padding: 20px;
+}
+
+
+.image_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.viewer{
+    width: 300px;
+    height: 250px;
+    background: #000;
+    border: 2px solid #333;
+}
+p{
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="image_container">
+        <div id="parking" class="viewer"><p>Main Gate</p></div>
+        <div id="shs201" class="viewer"><p>SHS201</p></div>
+        <div id="shs301" class="viewer"><p>SHS301</p></div>
+        <div id="libr" class="viewer"><p>LIBRARYSHS</p></div>
+        <div id="shssh" class="viewer"><p>SHSSH</p></div>
+        <div id="shss360" class="viewer"><p>SHSS360</p></div>
+        <div id="stshs" class="viewer"><p>STSHS</p></div>
+        <div id="tlea" class="viewer"><p>TLEA</p></div>
+        <div id="stagehal" class="viewer"><p>STAGE HALLWAY</p></div>
+        <div id="nf205" class="viewer"><p>NF205</p></div>
+        <div id="midw" class="viewer"><p>MIDWIFERY FRONT</p></div>
+        <div id="mb303" class="viewer"><p>MB303</p></div>
+        <div id="ffunc" class="viewer"><p>FRONT FUNCTION ROOM</p></div>
+        <div id="cb2" class="viewer"><p>CB SECOND</p></div>
+        <div id="cb3" class="viewer"><p>CB THIRD</p></div>
+        <div id="shs360" class="viewer"><p>SHS360</p></div>
+        <div id="cantin" class="viewer"><p>Canteen SHS</p></div>
+        <div id="blank" class="viewer"><p>blank</p></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<script>
+function loadPanorama(id, image){
+    pannellum.viewer(id, {
+        type: 'equirectangular',
+        panorama: image,
+        autoLoad: true,
+        autoRotate: 6
+    });
+}
+
+loadPanorama('parking', 'Parking.jpg');
+loadPanorama('shs201', 'SHS2013.jpg');
+loadPanorama('shs301', 'SHS3013.jpg');
+loadPanorama('libr', 'LIBRARY360.jpg');
+loadPanorama('shss360', 'SHSS360.jpg');
+loadPanorama('stshs', 'stshs.jpg');
+loadPanorama('tlea', 'TLEA.jpg');
+loadPanorama('stagehal', 'StageHal.jpg');
+loadPanorama('nf205', 'NF2053.jpg');
+loadPanorama('midw', 'midw.jpg');
+loadPanorama('mb303', 'MB3033.jpg');
+loadPanorama('ffunc', 'FFUNR.jpg');
+loadPanorama('cb2', 'CB2.1.jpg');
+loadPanorama('cb3', 'CB2.jpg');
+loadPanorama('shs360', 'SHS360.jpg');
+loadPanorama('shssh', 'SHSSH.jpg');
+loadPanorama('cantin', 'cantin.jpg');
+
+</script>
+
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUJRC Map Viewing</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(jn.jpg);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.viewer {
+    width: 300px;
+    height: 250px;
+    background: #000;
+    border: 2px solid #333;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+p{
+    color: white;
+}
+
+.viewer:hover {
+    border-color: #0af;
+}
+
+input{
+    width: 30em;
+    height:3rem ;
+    border-radius: 2em;
+}
+.searchbh{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<div class="searchbh">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Type to search..."
+        onkeyup="searchItem()"></div>
+
+<div class="image_container">
+    <div id="maingate" class="viewer"><p>Main Gate</p></div>
+    <div id="shs201" class="viewer"><p>SHS 201</p></div>
+    <div id="shs301" class="viewer"><p>SHS 301</p></div>
+    <div id="libr" class="viewer"><p>Library SHS</p></div>
+    <div id="shssh" class="viewer"><p>SHS SH</p></div>
+    <div id="shss360" class="viewer"><p>SHS S360</p></div>
+    <div id="stshs" class="viewer"><p>ST SHS</p></div>
+    <div id="tlea" class="viewer"><p>TLE A</p></div>
+    <div id="stagehal" class="viewer"><p>Stage Hallway</p></div>
+    <div id="nf205" class="viewer"><p>NF 205</p></div>
+    <div id="midw" class="viewer"><p>Midwifery Front</p></div>
+    <div id="mb303" class="viewer"><p>MB 303</p></div>
+    <div id="ffunc" class="viewer"><p>Front Function Room</p></div>
+    <div id="cb2" class="viewer"><p>CB Second</p></div>
+    <div id="cb3" class="viewer"><p>CB Third</p></div>
+    <div id="shs360" class="viewer"><p>SHS 360</p></div>
+    <div id="cantin" class="viewer"><p>Canteen SHS</p></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<script>
+function loadPanorama(viewerId, imagePath) {
+    pannellum.viewer(viewerId, {
+        type: "equirectangular",
+        panorama: imagePath,
+        autoLoad: true,
+        autoRotate: 5,
+        showControls: true
+    });
+}
+
+loadPanorama("maingate", "Parking.jpg");
+loadPanorama("shs201", "SHS2013.jpg");
+loadPanorama("shs301", "SHS3013.jpg");
+loadPanorama("libr", "LIBRARY360.jpg");
+loadPanorama("shssh", "SHSSH.jpg");
+loadPanorama("shss360", "SHSS360.jpg");
+loadPanorama("stshs", "stshs.jpg");
+loadPanorama("tlea", "TLEA.jpg");
+loadPanorama("stagehal", "StageHal.jpg");
+loadPanorama("nf205", "NF2053.jpg");
+loadPanorama("midw", "midw.jpg");
+loadPanorama("mb303", "MB3033.jpg");
+loadPanorama("ffunc", "FFUNR.jpg");
+loadPanorama("cb2", "CB2.1.jpg");
+loadPanorama("cb3", "CB2.jpg");
+loadPanorama("shs360", "SHS360.jpg");
+loadPanorama("cantin", "cantin.jpg");
+
+function searchItem() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    let parking = document.getElementById("maingate");
+    let shs201 = document.getElementById("shs201");
+    let shs301 = document.getElementById("shs301");
+    let libr = document.getElementById("libr");
+    let shssh = document.getElementById("shssh");
+    let shss360 = document.getElementById("shss360");
+    let stshs = document.getElementById("stshs");
+    let tlea = document.getElementById("tlea");
+    let stagehal = document.getElementById("stagehal");
+    let nf205 = document.getElementById("nf205");
+    let midw = document.getElementById("midw");
+    let mb303 = document.getElementById("mb303");
+    let ffunc = document.getElementById("ffunc");
+    let cb2 = document.getElementById("cb2");
+    let cb3 = document.getElementById("cb3");
+    let shs360 = document.getElementById("shs360");
+    let cantin = document.getElementById("cantin");
+
+    if (maingate.textContent.toLowerCase().includes(input)) {
+        maingate.style.display = "";
+    } else {
+        maingate.style.display = "none";
+    }
+
+    if (shs201.textContent.toLowerCase().includes(input)) {
+        shs201.style.display = "";
+    } else {
+        shs201.style.display = "none";
+    }
+
+    if (shs301.textContent.toLowerCase().includes(input)) {
+        shs301.style.display = "";
+    } else {
+        shs301.style.display = "none";
+    }
+
+    if (libr.textContent.toLowerCase().includes(input)) {
+        libr.style.display = "";
+    } else {
+        libr.style.display = "none";
+    }
+
+    if (shssh.textContent.toLowerCase().includes(input)) {
+        shssh.style.display = "";
+    } else {
+        shssh.style.display = "none";
+    }
+
+    if (shss360.textContent.toLowerCase().includes(input)) {
+        shss360.style.display = "";
+    } else {
+        shss360.style.display = "none";
+    }
+
+    if (stshs.textContent.toLowerCase().includes(input)) {
+        stshs.style.display = "";
+    } else {
+        stshs.style.display = "none";
+    }
+
+    if (tlea.textContent.toLowerCase().includes(input)) {
+        tlea.style.display = "";
+    } else {
+        tlea.style.display = "none";
+    }
+
+    if (stagehal.textContent.toLowerCase().includes(input)) {
+        stagehal.style.display = "";
+    } else {
+       stagehal.style.display = "none";
+    }
+
+    if (midw.textContent.toLowerCase().includes(input)) {
+        midw.style.display = "";
+    } else {
+        midw.style.display = "none";
+    }
+
+    if (nf205.textContent.toLowerCase().includes(input)) {
+        nf205.style.display = "";
+    } else {
+        nf205.style.display = "none";
+    }
+
+    if (mb303.textContent.toLowerCase().includes(input)) {
+        mb303.style.display = "";
+    } else {
+        mb303.style.display = "none";
+    }
+
+    if (ffunc.textContent.toLowerCase().includes(input)) {
+        ffunc.style.display = "";
+    } else {
+        ffunc.style.display = "none";
+    }
+
+    if (cb2.textContent.toLowerCase().includes(input)) {
+        cb2.style.display = "";
+    } else {
+        cb2.style.display = "none";
+    }
+
+    if (cb3.textContent.toLowerCase().includes(input)) {
+        cb3.style.display = "";
+    } else {
+        cb3.style.display = "none";
+    }
+
+    if (shs360.textContent.toLowerCase().includes(input)) {
+        shs360.style.display = "";
+    } else {
+        shs360.style.display = "none";
+    }
+
+    if (cantin.textContent.toLowerCase().includes(input)) {
+        cantin.style.display = "";
+    } else {
+        cantin.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
